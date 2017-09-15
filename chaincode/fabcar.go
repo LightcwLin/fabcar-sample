@@ -104,6 +104,7 @@ func (s *SmartContract) initLedger(APIstub shim.ChaincodeStubInterface) sc.Respo
 		Car{Make: "Fiat", Model: "Punto", Colour: "violet", Owner: "Pari"},
 		Car{Make: "Tata", Model: "Nano", Colour: "indigo", Owner: "Valeria"},
 		Car{Make: "Holden", Model: "Barina", Colour: "brown", Owner: "Shotaro"},
+		Car{Make: "Destoryer", Model: "Shira", Colour: "Pink", Owner: "PPoi"}
 	}
 
 	i := 0
