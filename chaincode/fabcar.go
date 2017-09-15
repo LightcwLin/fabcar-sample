@@ -106,7 +106,7 @@ func (s *SmartContract) initLedger(APIstub shim.ChaincodeStubInterface) sc.Respo
 		Car{Make: "Fiat", Model: "Punto", Colour: "violet", Price: "4321", Owner: "Pari"},
 		Car{Make: "Tata", Model: "Nano", Colour: "indigo", Price: "2222", Owner: "Valeria"},
 		Car{Make: "Holden", Model: "Barina", Colour: "brown", Price: "3333", Owner: "Shotaro"},
-		Car{Make: "Destoryer", Model: "Shira", Colour: "Pink", Price: "9999", Owner: "PPoi"},
+		Car{Make: "Kolle", Model: "Destoryer", Colour: "Pink", Price: "9999", Owner: "PPoi"},
 	}
 
 	i := 0
@@ -123,8 +123,8 @@ func (s *SmartContract) initLedger(APIstub shim.ChaincodeStubInterface) sc.Respo
 
 func (s *SmartContract) createCar(APIstub shim.ChaincodeStubInterface, args []string) sc.Response {
 
-	if len(args) != 5 {
-		return shim.Error("Incorrect number of arguments. Expecting 5")
+	if len(args) != 6 {
+		return shim.Error("Incorrect number of arguments. Expecting 6")
 	}
 
 	var car = Car{Make: args[1], Model: args[2], Colour: args[3], Price: args[4], Owner: args[5]}
